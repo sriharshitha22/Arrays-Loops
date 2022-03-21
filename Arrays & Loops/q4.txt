@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+   int rot[100000]; int n,k,j,i,t,tc;
+   scanf("%d",&tc);
+   while(tc--)
+   {
+       scanf("%d%d",&n,&k);
+       for(j=0;j<n;j++)
+        scanf("%d ",&rot[j]);;
+     for(j=0;j<k;j++)
+     {
+         t=rot[n-1];
+         for(i=n-1;i>0;i--)
+          rot[i]=rot[i-1];
+          
+          rot[i]=t;
+     }
+     for(i=0;i<n;i++)
+     printf("%d ",rot[i]);
+     
+     printf("\n");
+   }
+	return 0;
+}

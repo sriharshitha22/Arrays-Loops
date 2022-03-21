@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{ int n,p,i;
+int competition[100002];
+scanf("%d%d",&n,&p);
+for(i=1;i<n;i++)
+{ scanf("%d",&competition[100002]);
+printf("%d ",p+competition[100002]);
+p=competition[100002];
+}
+printf("%d\n",p);
+return 0;
+}
